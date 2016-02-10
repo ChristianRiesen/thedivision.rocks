@@ -12,7 +12,9 @@ a:link, a, a:visited {
 a:hover {
   color: lighten(_color(orange), 5%);
 }
-
+.resetPerspective {
+  transform: none;
+}
 main {
   max-width: _grid(max-width);
   margin: 50px auto;
@@ -27,6 +29,11 @@ main {
         border-bottom: solid 2px lighten(_color(black), 20%);
         color: inherit;
         margin-bottom: 0;
+      }
+      .togglePerspective {
+        font-size: .8em;
+        text-decoration: underline;
+        cursor: pointer;
       }
     }
   .vet h2 {
@@ -74,6 +81,10 @@ main {
           min-width: 300px;
           display: inline-block;
         }
+        .link-url {
+          min-width: 300px;
+          display: inline-block;
+        }
         span {
           font-family: _font(secondary-font-family);
           color: _color(white);
@@ -92,6 +103,7 @@ main {
   html,body {
     padding: 5px;
     main {
+      transform: none;
       margin-top: 20px;
     }
   }
