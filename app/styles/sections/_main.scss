@@ -87,3 +87,17 @@ main {
     }
   }
 }
+
+@media (max-width: 960px) {
+  html,body {
+    padding: 5px;
+    main {
+      margin-top: 20px;
+    }
+  }
+}
+@media (max-width: 550px) {
+  .link-name {
+    min-width: 0 !important;
+  }
+}
