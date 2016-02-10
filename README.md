@@ -16,10 +16,11 @@ First time using this repository you've to fire up
 
 After that you're able to use different gulp commands which you can lookup in the `gulpfile.babel.js`.
 
-The most important commands are:
+
+
 | command | description |
 |---|---|
-| `gulp serve` | (The command you're probably working with) It serves the files, creating an browser-sync instance and watch for changes and rebuild if needed
+| `gulp serve` | It serves the files, creating an browser-sync instance and watch for changes and rebuild if needed
 | `gulp build` | Just build the files. Putting them into the **dist** folder |
 
 #### Contribute
