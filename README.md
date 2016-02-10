@@ -29,6 +29,6 @@ This project is and should be always community driven. If you want to contribute
 Also there're no rules except for one: Be nice!
 
 #### Credits
-  * [Miodec]() for allowing me to steal the general design philosophy
+  * [Miodec]() 
   * [Sebastian Prein](https://github.com/mzdr) for the gulp-boilerplate
   * [The Division Discord Community]() for beeing awesome
