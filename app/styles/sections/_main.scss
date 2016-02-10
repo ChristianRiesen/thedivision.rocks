@@ -5,12 +5,6 @@
 html, body {
   background: #222;
   -webkit-font-smoothing: antialiased;
-  -webkit-backface-visibility: hidden;
-  filter: url('data:image/svg+xml;utf8,<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><filter id="gaussian_blur"><feGaussianBlur in="SourceGraphic" stdDeviation="0" /></filter></defs></svg>#gaussian_blur');
-  -webkit-filter: blur(0px);
-  -moz-filter: blur(0px);
-  -ms-filter: blur(0px);
-  filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='0');
 }
 
 a:link, a, a:visited {
@@ -20,12 +14,12 @@ a:hover {
   color: lighten(_color(orange), 5%);
 }
 .resetPerspective {
-  transform: none;
+  transform: perspective(700px) rotateY(5deg);
 }
 main {
   max-width: _grid(max-width);
   margin: 50px auto;
-  transform: perspective(700px) rotateY(5deg);
+  transform: none;
   footer {
     font-size: .9rem;
   }
