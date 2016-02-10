@@ -1,0 +1,87 @@
+/* -----------------------------------------------------------------------------
+   _main.scss
+   since it's a single-page website most of the magic happens here
+   -------------------------------------------------------------------------- */
+html, body {
+  background: #222;
+}
+
+a:link, a, a:visited {
+  color: _color(orange);
+}
+a:hover {
+  color: lighten(_color(orange), 5%);
+}
+
+main {
+  max-width: _grid(max-width);
+  margin: 50px auto;
+  transform: perspective(700px) rotateY(5deg);
+  div {
+    color: lighten(_color(gray),5%);
+    h1 {
+      display: inline-flex;
+      border-bottom: solid 2px lighten(_color(black), 10%);
+      color: inherit;
+      margin-bottom: 0;
+    }
+  }
+  section:last-child h2 {
+    border-bottom: solid 2px lighten(_color(red), 10%);
+  }
+  section {
+  transition: ease-in 0.1s all;
+  min-height: 200px;
+  border: solid 1px lighten(_color(black), 10%);
+  background: _color(black);
+  border-radius: 2px;
+  margin-bottom: 30px;
+  box-shadow: 0 0 20px darken(_color(black),10%);
+  &:hover {
+    transform: scale(1.1);
+  }
+    h2 {
+      margin-bottom: 0;
+      font-family: _font(secondary-font-family);
+      color: darken(_color(white), 10%);
+      padding: 5px 15px;
+      font-weight: 300;
+      font-size: 1.5rem;
+      border-bottom: solid 2px lighten(_color(orange), 10%);
+    }
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      .featured {
+        background: lighten(_color(orange), 10%) !important;
+        color: _color(white);
+        a {
+          color: _color(white);
+          font-weight: 600;
+        }
+      }
+      li {
+        padding: 5px 15px;
+        font-weight: 300;
+        span:first-child {
+          margin-left: 0;
+        }
+        .link-name {
+          min-width: 200px;
+          display: inline-block;
+        }
+        span {
+          font-family: _font(secondary-font-family);
+          color: _color(white);
+          margin: 0 10px;
+        }
+      }
+      li:nth-child(odd) {
+        background: lighten(_color(black), 5%);
+        color: _color(white);
+        font-family: _font(secondary-font-family);
+      }
+    }
+  }
+}
