@@ -1,1 +1,5 @@
-console.log('\'Allo \'Allo!');
+
+
+  $( ".togglePerspective" ).click(function() {
+    $( "main" ).toggleClass( "resetPerspective" );
+  });
