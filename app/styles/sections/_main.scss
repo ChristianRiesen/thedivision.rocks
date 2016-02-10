@@ -17,21 +17,23 @@ main {
   max-width: _grid(max-width);
   margin: 50px auto;
   transform: perspective(700px) rotateY(5deg);
-  div {
-    color: lighten(_color(gray),5%);
-    h1 {
-      display: inline-flex;
-      border-bottom: solid 2px lighten(_color(black), 10%);
-      color: inherit;
-      margin-bottom: 0;
-    }
+  footer {
+    font-size: .9rem;
   }
-  section:last-child h2 {
-    border-bottom: solid 2px lighten(_color(red), 10%);
+  div, footer {
+    color: lighten(_color(gray),5%);
+      h1 {
+        display: inline-flex;
+        border-bottom: solid 2px lighten(_color(black), 10%);
+        color: inherit;
+        margin-bottom: 0;
+      }
+    }
+  .vet h2 {
+    border-bottom: solid 2px lighten(_color(red), 10%) !important;
   }
   section {
   transition: ease-in 0.1s all;
-  min-height: 200px;
   border: solid 1px lighten(_color(black), 10%);
   background: _color(black);
   border-radius: 2px;
@@ -64,11 +66,12 @@ main {
       li {
         padding: 5px 15px;
         font-weight: 300;
+        color: _color(white);
         span:first-child {
           margin-left: 0;
         }
         .link-name {
-          min-width: 200px;
+          min-width: 300px;
           display: inline-block;
         }
         span {
@@ -79,7 +82,6 @@ main {
       }
       li:nth-child(odd) {
         background: lighten(_color(black), 5%);
-        color: _color(white);
         font-family: _font(secondary-font-family);
       }
     }
