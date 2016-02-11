@@ -141,6 +141,11 @@ main {
     main {
       transform: none;
       margin-top: 20px;
+      section {
+        &:hover {
+          transform: none;
+        }
+      }
     }
   }
 }
