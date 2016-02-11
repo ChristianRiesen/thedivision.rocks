@@ -4,11 +4,19 @@
     $( "main" ).toggleClass( "resetPerspective" );
   });
 
-var lessText = "Hide the resources";
-var moreText = "Show more resources";
+var lessText = "[click to show less resources]";
+var moreText = "[click to show more resources]";
 
-  $( ".toggleMore" ).click(function() {
+  $( "#standAloneNewcomers" ).click(function() {
     $( ".extendedResources" ).slideToggle( "fast" );
 
-    ($(".toggleMore").text() === lessText) ? $(".toggleMore").text(moreText) : $(".toggleMore").text(lessText);
+    ($("#standAloneNewcomers").text() === lessText) ? $("#standAloneNewcomers").text(moreText) : $("#standAloneNewcomers").text(lessText);
   });
+
+
+var hideThe100 = "[click to hide groups]";
+var showThe100 = "[click to show groups]";
+$( "#inlineExperts" ).click(function() {
+  $( ".toggleMoreThe100" ).slideToggle( "fast" );
+  ($("#toggleGroups").text() === hideThe100) ? $("#toggleGroups").text(showThe100) : $("#toggleGroups").text(hideThe100);
+});

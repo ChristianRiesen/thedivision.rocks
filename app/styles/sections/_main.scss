@@ -16,8 +16,13 @@ a:hover {
 .resetPerspective {
   transform: perspective(700px) rotateY(5deg);
 }
-.toggleMore {
+.toggleButtonInline {
+  padding: 5px 15px !important;
+}
+.toggleButtonStandalone {
   text-align: center;
+}
+.toggleButton {
   color: _color(white);
   font-family: _font(primary-font-family);
   font-size: inherit;
@@ -25,8 +30,12 @@ a:hover {
   padding: 4px 0;
   cursor: pointer;
 }
-.extendedResources {
+.toggleBox {
   display: none;
+}
+.toggleBoxInline {
+  li {
+  }
 }
 .badge {
   background: _color(gray-light);
@@ -44,6 +53,9 @@ a:hover {
 }
 .badge-sheets {
   background: _color(purple) !important;
+}
+.badge-findplayers {
+  background: _color(blue) !important;
 }
 .badge-reddit {
 
