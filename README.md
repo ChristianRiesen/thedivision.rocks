@@ -1,7 +1,7 @@
 ### Welcome, Agent!
 `this repository contains the files which are needed to build the thedivision.rocks website`
 
-  The Website provides a curated list of useful links for new agents as well as for veterans
+  The Website provides a curated list of useful links for new agents as well as for experts
 
 #### How-to build
 
