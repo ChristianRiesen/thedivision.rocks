@@ -16,6 +16,38 @@ a:hover {
 .resetPerspective {
   transform: perspective(700px) rotateY(5deg);
 }
+.toggleMore {
+  text-align: center;
+  color: _color(white);
+  font-family: _font(primary-font-family);
+  font-size: inherit;
+  font-weight: 300;
+  padding: 4px 0;
+  cursor: pointer;
+}
+.extendedResources {
+  display: none;
+}
+.badge {
+  background: _color(gray-light);
+  padding: 0 5px;
+  margin: 0 3px;
+  font-size: .9rem;
+  bottom: 1px;
+  position: relative;
+}
+.badge-offical {
+  background: #6172b5 !important;
+}
+.badge-tools {
+  background: darken(_color(yellow), 15%) !important;
+}
+.badge-reddit {
+
+}
+.agent-select {
+  margin-bottom: 30px;
+}
 main {
   max-width: _grid(max-width);
   margin: 50px auto;
