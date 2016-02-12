@@ -9,9 +9,10 @@ html, body {
 
 a:link, a, a:visited {
   color: _color(orange);
+  text-decoration: none !important;
 }
 a:hover {
-  color: lighten(_color(orange), 5%);
+  color: lighten(_color(orange), 15%);
 }
 .resetPerspective {
   transform: perspective(700px) rotateY(5deg);
@@ -44,6 +45,14 @@ a:hover {
   font-size: .9rem;
   bottom: 1px;
   position: relative;
+}
+.f {
+  margin-bottom: 40px;
+}
+.badge-featured {
+  position: relative;
+  bottom: 2px;
+  background: lighten(_color(orange), 5%);
 }
 .badge-offical {
   background: #6172b5 !important;
