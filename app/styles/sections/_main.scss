@@ -27,11 +27,11 @@ a:hover {
   font-family: _font(primary-font-family);
   font-size: inherit;
   font-weight: 300;
-  padding: 4px 0;
   cursor: pointer;
 }
 .toggleBox {
   display: none;
+
 }
 .toggleBoxInline {
   li {
@@ -66,6 +66,9 @@ a:hover {
 .agent-select {
   margin-bottom: 30px;
 }
+.catTitle {
+  display: inline-block;
+}
 main {
   max-width: _grid(max-width);
   margin: 50px auto;
@@ -92,15 +95,19 @@ main {
   }
   section {
   transition: ease-in 0.1s all;
-  border: solid 1px lighten(_color(black), 10%);
   background: _color(black);
   border-radius: 2px;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
   box-shadow: 0 0 20px darken(_color(black),10%);
   &:hover {
     transform: scale(1.1);
   }
     h2 {
+      border-top: solid 1px lighten(_color(black), 10%);
+      border-left: solid 1px lighten(_color(black), 10%);
+      border-right: solid 1px lighten(_color(black), 10%);
+      border-top-left-radius: 2px;
+      border-top-right-radius: 2px;
       margin-bottom: 0;
       font-family: _font(secondary-font-family);
       color: darken(_color(white), 10%);
@@ -122,9 +129,12 @@ main {
         }
       }
       li {
+        border-left: solid 1px lighten(_color(black), 10%);
+        border-right: solid 1px lighten(_color(black), 10%);
         padding: 5px 15px;
         font-weight: 300;
         color: _color(white);
+        background: lighten(_color(black), 3%);
         span:first-child {
           margin-left: 0;
         }
@@ -143,9 +153,76 @@ main {
         }
       }
       li:nth-child(odd) {
-        background: lighten(_color(black), 5%);
-        font-family: _font(secondary-font-family);
+      background: _color(black);
       }
+      li:last-child {
+        border-bottom-left-radius: 2px;
+        border-bottom-right-radius: 2px;
+        border-bottom: solid 1px lighten(_color(black), 10%);
+      }
+    }
+  }
+  .redditBox {
+    h2 {
+      border-bottom: _color(gray-light);
+    }
+    .description {
+      background: _color(gray-light);
+      border: solid 1px lighten(_color(gray-light), 10%);
+    }
+  }
+  .generalBox {
+    h2 {
+      border-bottom: _color(orange);
+    }
+    .description {
+      background: _color(orange);
+      border: solid 1px lighten(_color(orange), 10%);
+    }
+  }
+  .officalBox {
+    h2 {
+      border-bottom: _color(blue);
+    }
+    .description {
+      background: _color(blue);
+      border: solid 1px lighten(_color(blue), 10%);
+    }
+  }
+  .sheetsBox {
+    h2 {
+      border-bottom: _color(green);
+    }
+    .description {
+      background: _color(green);
+      border: solid 1px lighten(_color(green), 10%);
+    }
+  }
+  .toolsBox {
+    h2 {
+      border-bottom: _color(yellow);
+    }
+    .description {
+      background: _color(yellow);
+      border: solid 1px lighten(_color(yellow), 10%);
+    }
+  }
+  .lfgBox {
+    h2 {
+      border-bottom: _color(purple);
+    }
+    .description {
+      background: _color(purple);
+      border: solid 1px lighten(_color(purple), 10%);
+    }
+  }
+  .betaBox {
+    h2 {
+      border-bottom: _color(red);
+    }
+    .description {
+      background: _color(red);
+      border: solid 1px lighten(_color(red), 10%);
     }
   }
 }
