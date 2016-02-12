@@ -167,8 +167,8 @@ main {
       border-bottom: _color(gray-light);
     }
     .description {
-      background: _color(gray-light);
-      border: solid 1px lighten(_color(gray-light), 10%);
+      background: lighten(_color(gray-light), 5%);
+      border: solid 1px lighten(_color(gray-light), 15%);
     }
   }
   .generalBox {
@@ -176,8 +176,8 @@ main {
       border-bottom: _color(orange);
     }
     .description {
-      background: _color(orange);
-      border: solid 1px lighten(_color(orange), 10%);
+      background: lighten(_color(orange), 5%);
+      border: solid 1px lighten(_color(orange), 15%);
     }
   }
   .officalBox {
@@ -185,8 +185,8 @@ main {
       border-bottom: _color(blue);
     }
     .description {
-      background: _color(blue);
-      border: solid 1px lighten(_color(blue), 10%);
+      background: lighten(_color(blue), 5%);
+      border: solid 1px lighten(_color(blue), 15%);
     }
   }
   .sheetsBox {
@@ -194,8 +194,8 @@ main {
       border-bottom: _color(green);
     }
     .description {
-      background: _color(green);
-      border: solid 1px lighten(_color(green), 10%);
+      background: lighten(_color(green), 5%);
+      border: solid 1px lighten(_color(green), 15%);
     }
   }
   .toolsBox {
@@ -203,7 +203,7 @@ main {
       border-bottom: _color(yellow);
     }
     .description {
-      background: _color(yellow);
+      background: darken(_color(yellow), 10%);
       border: solid 1px lighten(_color(yellow), 10%);
     }
   }
@@ -212,8 +212,8 @@ main {
       border-bottom: _color(purple);
     }
     .description {
-      background: _color(purple);
-      border: solid 1px lighten(_color(purple), 10%);
+      background: lighten(_color(purple), 5%);
+      border: solid 1px lighten(_color(purple), 15%);
     }
   }
   .betaBox {
@@ -221,8 +221,8 @@ main {
       border-bottom: _color(red);
     }
     .description {
-      background: _color(red);
-      border: solid 1px lighten(_color(red), 10%);
+      background: lighten(_color(red), 5%);
+      border: solid 1px lighten(_color(red), 15%);
     }
   }
 }
